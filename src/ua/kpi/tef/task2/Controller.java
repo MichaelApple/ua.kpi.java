@@ -34,13 +34,8 @@ public class Controller {
         ArrayList<Integer> list = new ArrayList<>();
 
         view.printMessage(View.INPUT_INT_DATA);
-
-        while ((guess = sc.nextInt()) < min || (guess > max)) {
-            view.printMessage(View.WRONG_INPUT_DATA + View.INPUT_INT_DATA);
-            guessCount++;
-            list.add(guess);
-        }
-
+        
+        guess = sc.nextInt();
         while (guess != winNumber) {
 
             while (guess < min || (guess > max)) {
