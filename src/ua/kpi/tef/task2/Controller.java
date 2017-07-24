@@ -34,7 +34,7 @@ public class Controller {
         ArrayList<Integer> list = new ArrayList<>();
 
         view.printMessage(View.INPUT_INT_DATA);
-        
+
         guess = sc.nextInt();
         while (guess != winNumber) {
 
